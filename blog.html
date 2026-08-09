@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/popup-effect.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"> 
+    <script src="js/jquery-4.0.0.min.js" defer></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/jquery.magnific-popup.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <title>Blog</title>
+</head>
+
+<body>
+    <div class="popup mfp-hide mfp-with-anim" id="popup">
+        <div class="popup__header">
+            <img src="images/logo_clinic.svg" alt="Логотип Клиники" class="popup__logo">
+        </div>
+
+        <form class="popup__form">
+            <h3 class="popup__title">Получить консультацию</h3>
+            <input class="popup__input-name" type="text" aria-label="Имя" placeholder="Ваше имя">
+            <input class="popup__input-phone" type="number" aria-label="Номер телефона" placeholder="Ваш телефон">
+            <a href="#" class="popup__btn">Отправить</a>
+            <p class="popup__description">Нажимая кнопку, я даю свое согласие на обработку моих персональных данных</p>
+        </form>
+    </div>
+
+    <header class="header">
+        <div class="header__contacts">
+            <div class="container">
+                <div class="header__contacts-row">
+                    <div class="header__contacts-location">
+                        <img src="images/location.svg" alt="Место положение клиники">
+                        <span>ул. Протопского 28А город Алматы</span>
+                    </div>
+
+                    <address class="header__contacts-info">
+                        <a class="header__contacts-phone" href="tel:77776544454">
+                            <img src="images/phone.svg" alt="Телефон клиники">
+                            <span>+7 (777) 654 44 54</span>
+                        </a>
+
+                        <a class="header__contacts-email" href="mailto:info@dentaltooth.kz">
+                            <img src="images/mail.svg" alt="Электронная почта клиники">
+                            <span>info@dentaltooth.kz</span>
+                        </a>
+
+                        <a href="#" class="header__contacts-social">
+                            <img src="images/vk.svg" alt="Группа клиники во Вконтакте">
+                        </a>
+                    </address>
+
+                    <div class="hamburger">
+                        <img src="images/hamburger.svg" alt="Значок меню">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__menu">
+            <div class="container">
+                <div class="header__menu-row">
+                    <a href="index.html" class="header__logo">
+                        <img src="images/logo_clinic.svg" alt="Логотип клиники">
+                    </a>
+
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#price">Услуги</a></li>
+                            <li><a href="dentists-page.html">Наши специалисты</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="blog.html">Блог</a></li>
+                            <li><a href="contacts-page.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <a href="#popup" class="header__btn" data-effect="mfp-zoom-in">Получить консультацию</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <h3 class="mobile-menu__header-title">Меню</h3>
+
+                <button class="mobile-menu__header-btn">
+                    <img src="images/close.svg" alt="Кнопка закрытия мобильного меню">
+                </button>
+            </div>
+
+            <div class="mobile-menu__contacts">
+                <a class="header__contacts-phone" href="tel:77776544454">
+                    <img src="images/phone.svg" alt="Телефон клиники">
+                    <span>+7 (777) 654 44 54</span>
+                </a>
+
+                <a class="header__contacts-email" href="mailto:info@dentaltooth.kz">
+                    <img src="images/mail.svg" alt="Электронная почта клиники">
+                    <span>info@dentaltooth.kz</span>
+                </a>
+
+                <a href="#">
+                    <img src="images/vk.svg" alt="Группа клиники во Вконтакте">
+                </a>
+            </div>
+
+            <nav class="mobile-menu__nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#price">Услуги</a></li>
+                    <li><a href="dentists-page.html">Наши специалисты</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="contacts-page.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="path">
+        <div class="container">
+            <div class="path__group">
+                <a class="path__link" href="index.html">
+                    <img src="images/Home-logo.svg" alt="Сиимвол домика" class="path__img">
+                    Главная
+                </a>
+                <span> / </span>
+                <a class="path__link" href="blog.html">Блог</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h2 class="news__title blog__title">Блог</h2>
+            <div class="news__wrapper">
+                <article class="news__card">
+                    <img src="images/news_1.webp" alt="Рука которая держит вставную челюсть" class="news__img">
+                    <p class="news__meta">05 ноября 2022 <span class="news__comment">0 комментариев</span></p>
+                    <h4 class="news__headline">Что стоматолог может сделать для ваших зубов</h4>
+                    <p class="news__description">Если они были измотаны, то и боль, и таблетку, и саму подушку, и саму
+                        боль надо беречь, в следующий раз ...</p>
+                    <a href="blog-single.html" class="news__btn">Читать далее</a>
+                </article>
+                <article class="news__card">
+                    <img src="images/news_2.webp" alt="Процесс работы стоматолога" class="news__img">
+                    <p class="news__meta">05 ноября 2022 <span class="news__comment">0 комментариев</span></p>
+                    <h4 class="news__headline">Как выбрать стоматологию и не ошибиться?</h4>
+                    <p class="news__description">Безусловно, существующая теория позволяет выполнить важные задания по
+                        разработке благоприятных перспектив...</p>
+                    <a href="#" class="news__btn">Читать далее</a>
+                </article>
+                <article class="news__card">
+                    <img src="images/news_3.webp" alt="Мучащайся от зубной боли человек" class="news__img">
+                    <p class="news__meta">05 ноября 2022 <span class="news__comment">0 комментариев</span></p>
+                    <h4 class="news__headline">Сильно болит зуб? Лечение в домашних условиях</h4>
+                    <p class="news__description">Учитывая ключевые сценарии поведения, выбранный нами инновационный путь
+                        напрямую зависит от поставленных...</p>
+                    <a href="#" class="news__btn">Читать далее</a>
+                </article>
+                <article class="news__card">
+                    <img src="images/news_4.webp" alt="Подбор протезов" class="news__img">
+                    <p class="news__meta">05 ноября 2022 <span class="news__comment">0 комментариев</span></p>
+                    <h4 class="news__headline">Как спасти тетрациклиновые зубы?</h4>
+                    <p class="news__description">Но новая модель организационной деятельности прекрасно подходит для
+                        реализации распределения...</p>
+                    <a href="#" class="news__btn">Читать далее</a>
+                </article>
+                <article class="news__card">
+                    <img src="images/news_5.webp" alt="Уход за зубами" class="news__img">
+                    <p class="news__meta">05 ноября 2022 <span class="news__comment">0 комментариев</span></p>
+                    <h4 class="news__headline">Как правильно чистить зубы? 15 советов</h4>
+                    <p class="news__description">Неопровержимые выводы, а также акционеры крупнейших компаний являются
+                        только методом...</p>
+                    <a href="#" class="news__btn">Читать далее</a>
+                </article>
+                <article class="news__card">
+                    <img src="images/news_1.webp" alt="Рука которая держит вставную челюсть" class="news__img">
+                    <p class="news__meta">05 ноября 2022 <span class="news__comment">0 комментариев</span></p>
+                    <h4 class="news__headline">Все что Вы хотели узнать про сознательную седацию</h4>
+                    <p class="news__description">Тщательные исследования конкурентов функционально разнесены на
+                        независимые элементы...</p>
+                    <a href="#" class="news__btn">Читать далее</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="recording">
+        <div class="container">
+            <div class="recording-row">
+                <form class="recording__card">
+                    <h3 class="recording__title">Записаться на прием</h3>
+                    <input class="recording__input-name" type="text" aria-label="Имя" placeholder="Ваше имя">
+                    <input class="recording__input-phone" type="number" aria-label="Номер телефона"
+                        placeholder="Ваш телефон">
+                    <a href="#" class="recording__btn">Записаться на приём</a>
+                    <p class="recording__description">Нажимая кнопку, я даю свое согласие на обработку моих персональных
+                        данных</p>
+                </form>
+
+                <img src="images/nurse.webp" class="recording__img" alt="Девушка медсестра">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__inner">
+                    <div class="footer__contacts">
+                        <a href="#" class="footer__logo">
+                            <img src="images/logo_footer.svg" alt="Логотип клиники">
+                        </a>
+
+                        <address class="footer__contacts-info">
+                            <div class="footer__contacts-location">
+                                <img src="images/location.svg" alt="Место положение клиники">
+                                <span>ул. Протопского 28А <br>город Алматы</span>
+                            </div>
+
+                            <a class="footer__contacts-phone" href="tel:77776544454">
+                                <img src="images/phone.svg" alt="Телефон клиники">
+                                <span>+7 (777) 654 44 54</span>
+                            </a>
+
+                            <a class="footer__contacts-email" href="mailto:info@dentaltooth.kz">
+                                <img src="images/mail.svg" alt="Электронная почта клиники">
+                                <span>info@dentaltooth.kz</span>
+                            </a>
+
+                            <a href="#" class="footer__contacts-social">
+                                <img src="images/vk.svg" alt="Группа клиники во Вконтакте">
+                            </a>
+                        </address>
+                    </div>
+
+                    <div class="footer__services">
+                        <h4 class="footer__title">Наши услуги</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#">Отбеливание зубов</a></li>
+                            <li class="footer__item"><a href="#">Лечение десен</a></li>
+                            <li class="footer__item"><a href="#">Апноэ во сне</a></li>
+                            <li class="footer__item"><a href="#">Реставрации</a></li>
+                            <li class="footer__item"><a href="#">Дизайн улыбки</a></li>
+                            <li class="footer__item"><a href="#">Корневой канал</a></li>
+                            <li class="footer__item"><a href="#">Имплантационная стоматология</a></li>
+                            <li class="footer__item"><a href="#">Сознательная седация</a></li>
+                            <li class="footer__item"><a href="#">Ортодонтия</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__doctors">
+                        <h4 class="footer__title">Наши стоматологи</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#">John Doe</a></li>
+                            <li class="footer__item"><a href="#">Evan Krak</a></li>
+                            <li class="footer__item"><a href="#">Sophia Green</a></li>
+                            <li class="footer__item"><a href="#">Maria Delfina</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__mode">
+                        <h4 class="footer__title">Часы работы</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">Понедельник: 8:30 - 9:00</li>
+                            <li class="footer__item">Вторник: 8:00 - 9:00</li>
+                            <li class="footer__item">Среда: 8:00 - 9:00</li>
+                            <li class="footer__item">Четверг: 8:30 - 9:00</li>
+                            <li class="footer__item">Пятница: 10:00 - 4:00</li>
+                            <li class="footer__item">Суббота: выходной</li>
+                            <li class="footer__item">Воскресенье: Закрыто</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">2022 © Dental Tooth Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

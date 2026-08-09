@@ -1,0 +1,2919 @@
+@import url('variables.css');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* header start */
+.header__contacts {
+    background-color: #2378C9;
+    padding: 14px 0;
+}
+
+.header__contacts-row {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 14px;
+
+    & a {
+        color: var(--color-white);
+    }
+}
+
+.header__contacts-location {
+    display: flex;
+    align-items: center;
+
+    & img {
+        margin-right: 14px;
+    }
+}
+
+.header__contacts-info {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 40px;
+
+    & img {
+        margin-right: 11px;
+    }
+}
+
+.header__contacts-social {
+    padding-left: 15px;
+
+    & img {
+        max-width: 22px;
+        margin-right: 0px;
+    }
+}
+
+.header__contacts-social:hover {
+    transition: 0.9s ease;
+    transform: rotate(360deg)
+}
+
+.header__menu {
+    box-shadow: 1px 2px 2px -1px rgba(48, 44, 44, 0.18);
+    padding: 22px 0;
+}
+
+.header__menu-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-black);
+    font-size: 18px;
+}
+
+.header__logo img {
+    max-width: 172px;
+}
+
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__nav ul a {
+    color: var(--color-black);
+    transition: 0.5s ease;
+}
+
+.header__nav ul a:hover {
+    color: #2378C9;
+}
+
+.header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 29px;
+    font-size: 14px;
+    background-color: #F86D6D;
+    color: var(--color-white);
+    text-decoration: none;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+}
+
+.header__btn:hover {
+    background-color: #f84848;
+}
+
+.hamburger {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #0E6EAA;
+    box-shadow: -2px 4px 4px 3px #312E2E17;
+    transition: 0.5s ease;
+    transform: translateX(130%);
+    z-index: 3;
+}
+
+.mobile-menu.is-active {
+    transform: none;
+}
+
+.mobile-menu__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-white);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.mobile-menu__header::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    content: '';
+    height: 1px;
+    width: calc(100% + 40px);
+    background-color: #D9D6D68F;
+}
+
+.mobile-menu__header-title {
+    font-size: 22px;
+}
+
+.mobile-menu__header-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu__contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+.mobile-menu__contacts a {
+    color: var(--color-white);
+}
+
+.mobile-menu__nav {
+    text-align: center;
+}
+
+.mobile-menu__nav li {
+    margin-bottom: 30px;
+}
+
+.mobile-menu__nav a {
+    color: var(--color-white);
+}
+
+/* header end */
+
+/* banner start */
+.banner {
+    background-color: #0E6EAA;
+    color: var(--color-white);
+}
+
+.banner-row {
+    display: flex;
+    align-items: center;
+}
+
+.banner__left {
+    max-width: 480px;
+}
+
+.banner__subtitle {
+    position: relative;
+    color: #C5C1FE;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.banner__subtitle::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #C5C1FE;
+    top: 50%;
+    left: calc(-100% - 16px);
+    transform: translateY(-50%);
+}
+
+.banner__title {
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.banner__description {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+.banner__btn {
+    display: inline-block;
+    background-color: #5EB8F0;
+    color: var(--color-white);
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 18px 43px;
+    white-space: nowrap;
+}
+
+.banner__right {
+    position: relative;
+    margin-left: auto;
+    margin-right: 154px;
+}
+
+.banner__img {
+    position: relative;
+    max-width: 483px;
+    z-index: 1;
+    vertical-align: bottom;
+}
+
+.banner__img-logo {
+    position: absolute;
+    top: 177px;
+    right: -80px;
+}
+
+.banner__img-circle {
+    display: block;
+    position: absolute;
+    width: 218px;
+    height: 22px;
+    top: 330px;
+    left: 50%;
+    border-radius: 100%;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 133px 239px rgba(255, 255, 255, 0.1);
+    transform: translateX(-50%);
+}
+
+.banner__btn-mobile {
+    display: none;
+}
+
+/* banner end */
+
+/* about start */
+.about {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+}
+
+.about__img {
+    max-width: 480px;
+    margin: 115px 60px 105px 0px;
+}
+
+.about__right {
+    max-width: 680px;
+}
+
+.about__title {
+    color: var(--color-black);
+    font-size: 50px;
+    font-weight: 400;
+    white-space: nowrap;
+    padding-bottom: 35px;
+    line-height: 52px;
+}
+
+.about__title-item {
+    font-weight: 700;
+    color: #2378C9;
+}
+
+.about__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #6B6868;
+    padding-bottom: 40px;
+}
+
+.about__list-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-black);
+    padding-bottom: 18px;
+}
+
+.about__list {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px 0px;
+    font-size: 20px;
+}
+
+.about__list li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.about__list li::before {
+    content: "●";
+    position: relative;
+    top: -2.5px;
+    color: #2378C9;
+    font-size: 32px;
+    margin-right: 22px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+/* about end */
+
+/* features start */
+.features {
+    background-color: #DFEEFC;
+    color: var(--color-black);
+    padding: 94px 0;
+}
+
+.features-row {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.features__item {
+    align-items: center;
+    text-align: center;
+}
+
+.features__icon {
+    max-width: 100px;
+    padding-bottom: 25px;
+}
+
+.features__title {
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+
+.features__description {
+    color: #56565E;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* features end */
+
+/* specialists start */
+.specialists {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 91px 0 120px;
+}
+
+.specialists-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialists__top {
+    max-width: 475px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.specialists__title {
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.specialists__description {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.specialists__bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.specialists__card {
+    max-width: 285px;
+    background-color: #2378C9;
+    color: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px -1px rgba(29, 28, 28, 0.28);
+}
+
+.specialists__img {
+    width: 100%;
+    padding-bottom: 22px;
+}
+
+.specialists__name {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    padding-bottom: 7px;
+    margin-left: 24px;
+}
+
+.specialists__profession {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    padding-bottom: 23px;
+    margin-left: 24px;
+}
+
+/* specialists end */
+
+/* price start */
+.price {
+    position: relative;
+    background: -webkit-linear-gradient(90deg, #a7d2fb, #dfeefc);
+    background: linear-gradient(90deg, #a7d2fb, #dfeefc);
+}
+
+.price__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: min(675px, 55vw);
+    height: auto;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+}
+
+.price__left {
+    max-width: 715px;
+    padding: 75px 0 103px;
+}
+
+.price__card {
+    max-width: 715px;
+    background-color: #5EB8F0;
+    color: var(--color-white);
+    border-radius: 20px;
+    padding: 55px 61px;
+}
+
+.price__title {
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price__description {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.price__services {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    margin-bottom: 28px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed var(--color-white);
+}
+
+.price__service-sum {
+    font-weight: 700;
+}
+
+/* price end */
+
+/* news start */
+.news {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.news__title {
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 400;
+    text-align: center;
+    padding: 105px 0 43px;
+}
+
+.news__wrapper {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding-bottom: 116px;
+}
+
+.news__card {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    padding: 15px 15px 37px;
+}
+
+.news__img {
+    padding-bottom: 25px;
+}
+
+.news__meta {
+    display: flex;
+    justify-content: space-between;
+    color: #A9A9A9;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    padding: 0px 15px 15px;
+}
+
+.news__comment {
+    font-weight: 700;
+}
+
+.news__headline {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 0px 15px 17px;
+}
+
+.news__description {
+    color: #56565E;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 0px 15px 26px;
+}
+
+.news__btn {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #5EB8F0;
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+/* news end */
+
+/* reviews start */
+.reviews {
+    background-image: url('../images/reviews_bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0;
+}
+
+.reviews .swiper {
+    overflow: visible;
+}
+
+.reviews__card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 55px 30px 70px;
+}
+
+.reviews__card::after {
+    display: block;
+    position: absolute;
+    top: 165px;
+    left: 55%;
+    transform: translateX(-55%);
+    content: '';
+    background-image: url('../images/quotes.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 84px;
+    height: 64px;
+}
+
+.reviews__title {
+    color: var(--color-black);
+    text-align: center;
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.reviews__content {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 786px;
+}
+
+.reviews__avatar {
+    max-width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-right: 43px;
+}
+
+.reviews__name-img {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.reviews__description {
+    color: #6B6868;
+    font-size: 18px;
+    line-height: 1.75;
+    padding-bottom: 37px;
+}
+
+.reviews__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews__name-text {
+    color: #2378C9;
+    font-size: 30px;
+    line-height: 1.75;
+    font-weight: 700;
+}
+
+.reviews .swiper-button-prev,
+.reviews .swiper-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #C5C1FE;
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.reviews .swiper-horizontal .swiper-button-prev {
+    left: -45px;
+    top: 70px;
+}
+
+.reviews .swiper-horizontal .swiper-button-next {
+    right: -45px;
+    top: 70px;
+}
+
+.reviews .swiper-button-prev svg,
+.reviews .swiper-button-next svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 1.5px;
+}
+
+.reviews .swiper-slide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.reviews .swiper-slide-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* reviews end */
+
+/* recording start */
+.recording {
+    background: -webkit-linear-gradient(90deg, #a7d2fb, #dfeefc);
+    background: linear-gradient(90deg, #a7d2fb, #dfeefc);
+}
+
+.recording-row {
+    display: flex;
+    align-items: center;
+}
+
+.recording__card {
+    max-width: 425px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    box-shadow: 0px 0px 8px -1px rgba(29, 28, 28, 0.28);
+    border-radius: 20px;
+    margin: 120px 60px 120px 70px;
+    padding: 58px 68px;
+}
+
+.recording__title {
+    font-size: 32px;
+    line-height: 1;
+    text-wrap: nowrap;
+    padding-bottom: 30px;
+}
+
+.recording__input-name,
+.recording__input-phone {
+    width: 100%;
+    height: 62px;
+    font-size: 18px;
+    padding-left: 22px;
+    margin-bottom: 20px;
+    color: #B9B9B9;
+    border-radius: 10px;
+    border: 1px solid #E4E4E4;
+    outline: none;
+}
+
+.recording__input-name::placeholder,
+.recording__input-phone::placeholder {
+    font-family: 'Source Sans Pro';
+}
+
+.recording__btn {
+    display: inline-block;
+    width: 100%;
+    background-color: #5EB8F0;
+    color: var(--color-white);
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 18px 0px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    transition: background-color 0.35s ease;
+}
+
+.recording__btn:hover {
+    background-color: #51A8DE;
+}
+
+.recording__description {
+    color: #747474;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.recording__img {
+    max-width: 560px;
+    vertical-align: bottom;
+}
+
+/* recording end */
+
+/* footer start */
+.footer {
+    background-color: #10406F;
+    color: var(--color-white);
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.footer__inner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 65px 25px 0 0;
+    padding-bottom: 60px;
+}
+
+
+.footer__inner::after {
+    content: '';
+    position: absolute;
+    top: -65px;
+    bottom: 0;
+    left: calc(186px + 100px);
+    width: 1px;
+    background-color: #B4B4B459;
+    z-index: 1;
+}
+
+.footer__contacts {
+    flex: 0 0 auto;
+    width: 186px;
+    max-width: 186px;
+    margin-right: 100px;
+    text-align: start;
+}
+
+.footer__logo {
+    display: inline-block;
+    max-width: 175px;
+    padding-bottom: 80px;
+}
+
+.footer__contacts-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contacts-info img {
+    margin-right: 12px;
+}
+
+.footer__contacts-location {
+    display: flex;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.footer__contacts-phone {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.footer__contacts-email {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 74px;
+}
+
+.footer__contacts-social {
+    display: flex;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+}
+
+.footer__contacts-social:hover {
+    transition: 0.9s ease;
+    transform: rotate(360deg)
+}
+
+.footer__contacts-info a {
+    color: var(--color-white);
+}
+
+.footer__title {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 600;
+    padding-bottom: 21px;
+}
+
+.footer__item {
+    color: #E0E0E0;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.footer__item a {
+    color: #E0E0E0;
+    transition: color 0.35s ease;
+}
+
+.footer__item a:hover {
+    color: var(--color-white);
+}
+
+.footer__copyright {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 37px 0;
+    border-top: 1px solid #B4B4B459;
+}
+
+.footer__copyright-text {
+    color: #C3C3C3;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+/* footer end */
+
+/* path end */
+.path {
+    display: flex;
+    justify-content: center;
+    background-color: #DFEEFC;
+}
+
+.path__group {
+    font-size: clamp(11px, 2.5vw, 18px);
+    line-height: 1;
+    font-weight: 400;
+    color: var(--color-black);
+    margin: 26px 0;
+}
+
+
+
+.path__link {
+    position: relative;
+    color: var(--color-black);
+}
+
+.path__img {
+    position: absolute;
+    left: -40px;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 14px;
+}
+
+/* path end */
+
+/* Blog page start */
+.blog__title {
+    padding: 50px 0 43px;
+}
+
+/* Blog page end */
+
+/* Blog-single page start */
+.memo {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 64px 0 74px;
+}
+
+.memo__img {
+    display: inline-block;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+}
+
+.memo__meta {
+    display: flex;
+    justify-content: flex-start;
+    color: #A9A9A9;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    padding: 35px 0px 24px;
+}
+
+.memo__comment {
+    font-weight: 700;
+    margin-left: 27px;
+}
+
+.memo__title {
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+
+.memo__description {
+    color: #535050;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+
+.memo__description:last-child {
+    padding-bottom: 0;
+}
+
+.memo__subtitle {
+    color: #535050;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 700;
+}
+
+.memo__nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.memo__nav::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 100%;
+    background-color: #E2DFDF;
+}
+
+.memo__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--color-black);
+    transition: 0.65s ease;
+}
+
+.memo__btn:first-child:hover {
+    color: #2378C9;
+    transform: translateX(10px);
+}
+
+.memo__btn:last-child:hover {
+    color: #2378C9;
+    transform: translateX(-10px);
+}
+
+.memo__separator-top {
+    display: none;
+}
+
+.memo__separator-bottom {
+    border: 1px solid #ECECEC;
+    margin-top: 75px;
+}
+
+.comment {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding-bottom: 70px;
+}
+
+.comment__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment__title {
+    color: var(--color-black);
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 46px;
+}
+
+.comment__input {
+    width: 100%;
+    height: 62px;
+    font-size: 18px;
+    padding-left: 23px;
+    margin-bottom: 20px;
+    color: #B9B9B9;
+    border-radius: 10px;
+    border: 1px solid #E4E4E4;
+    outline: none;
+}
+
+.comment__input::placeholder {
+    font-family: 'Source Sans Pro';
+}
+
+.comment__input-comment {
+    resize: vertical;
+    height: 256px;
+    padding-top: 20px;
+}
+
+.comment__btn {
+    display: inline-block;
+    background-color: #F86D6D;
+    color: var(--color-white);
+    max-width: 183px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 26px;
+    text-decoration: none;
+    padding: 16px 53px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    transition: background-color 0.35s ease;
+}
+
+.comment__btn:hover {
+    background-color: #f33232;
+}
+
+.comment__description {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-black);
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.comment__card {
+    display: flex;
+    max-width: 510px;
+    padding: 55px 0 71px;
+}
+
+.comment__img {
+    border-radius: 100%;
+}
+
+.comment__commentary {
+    padding-left: 30px;
+}
+
+.comment__name {
+    color: var(--color-black);
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.comment__date {
+    display: block;
+    color: #A0A0A0;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 300;
+    padding-bottom: 12px;
+}
+
+.comment__text {
+    color: var(--color-black);
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.comment__answer {
+    color: #F86D6D;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* Blog-single page end */
+
+/* Contacts-page start */
+.clinic-contacts {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.clinic-contacts__title {
+    color: var(--color-black);
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 400;
+    padding: 67px 0 48px;
+    text-align: center;
+}
+
+.clinic-contacts__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 21px;
+    padding-bottom: 60px;
+}
+
+.clinic-contacts__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+    width: 284px;
+    height: 288px;
+    border-radius: 5px;
+}
+
+.clinic-contacts__card--address {
+    background-color: #5EB8F0;
+}
+
+.clinic-contacts__card--phone {
+    background-color: #54A0CF;
+}
+
+.clinic-contacts__card--mail {
+    background-color: #29A9F9;
+}
+
+.clinic-contacts__card--social {
+    background-color: #328DC6;
+}
+
+.clinic-contacts__card-img--address {
+    width: 45px;
+    height: 57px;
+    margin: 60px 0 22px;
+}
+
+.clinic-contacts__card-img--phone {
+    width: 45px;
+    height: 45px;
+    margin: 78px 0 22px;
+}
+
+.clinic-contacts__card-img--mail {
+    width: 45px;
+    height: 34px;
+    margin: 83px 0 22px;
+}
+
+.clinic-contacts__card-img--social {
+    width: 47px;
+    height: 47px;
+    margin: 58px 0 21px;
+}
+
+.clinic-contacts__card-title {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.clinic-contacts__card-description {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+}
+
+.clinic-contacts__card-social {
+    width: 22px;
+    height: 22px;
+    margin-top: 21px;
+}
+
+.connection {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding-bottom: 65px;
+}
+
+.connection__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.connection__form {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+}
+
+.connection__title {
+    color: var(--color-black);
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 54px;
+}
+
+.connection__input {
+    width: 100%;
+    height: 62px;
+    font-size: 18px;
+    padding-left: 29px;
+    margin-bottom: 22px;
+    color: #B9B9B9;
+    border-radius: 10px;
+    border: 1px solid #E4E4E4;
+    outline: none;
+}
+
+.connection__input::placeholder {
+    font-family: 'Source Sans Pro';
+}
+
+.connection__input-comment {
+    resize: vertical;
+    height: 256px;
+    padding-top: 20px;
+}
+
+.connection__btn {
+    display: inline-block;
+    background-color: #F86D6D;
+    color: var(--color-white);
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 26px;
+    text-decoration: none;
+    padding: 16px 0px;
+    white-space: nowrap;
+    transition: background-color 0.35s ease;
+}
+
+.connection__btn:hover {
+    background-color: #f33232;
+}
+
+/* Contacts-page end */
+
+/* Dentists-page start */
+.dentists {
+    background-color: var(--color-white);
+}
+
+.dentists__card {
+    display: flex;
+}
+
+.dentists__img {
+    display: block;
+    max-width: 430px;
+    height: auto;
+    margin: 71px 64px 71px 10px;
+}
+
+.dentists__name {
+    color: var(--color-black);
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 106px 0 32px;
+}
+
+.dentists__title {
+    color: #56565E;
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.dentists__description {
+    position: relative;
+    color: #56565E;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.dentists__description::before {
+    content: "•";
+    position: absolute;
+    left: -8px;
+    top: -22px;
+    font-size: 38px;
+    line-height: 1.8;
+    color: #5EB8F0;
+}
+
+.dentists__schedule {
+    color: #56565E;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.dentists-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    padding-bottom: 71px;
+}
+
+.dentists-contacts__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+    width: 100%;
+    height: 288px;
+    border-radius: 5px;
+}
+
+.dentists-contacts__card--phone {
+    background-color: #54A0CF;
+}
+
+.dentists-contacts__card--mail {
+    background-color: #29A9F9;
+}
+
+.dentists-contacts__card--social {
+    background-color: #328DC6;
+}
+
+.dentists-contacts__card-img--phone {
+    width: 45px;
+    height: 45px;
+    margin: 78px 0 22px;
+}
+
+.dentists-contacts__card-img--mail {
+    width: 45px;
+    height: 34px;
+    margin: 83px 0 22px;
+}
+
+.dentists-contacts__card-img--social {
+    width: 47px;
+    height: 47px;
+    margin: 75px 0 21px;
+}
+
+.dentists-contacts__card-title {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.dentists-contacts__card-description {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dentists-contacts__card-social {
+    width: 22px;
+    height: 22px;
+    margin-top: 18px;
+}
+
+/* Dentists-page end */
+
+/* Popup start */
+.popup {
+    position: fixed;
+    max-width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    box-shadow: 0px 0px 8px -1px rgba(29, 28, 28, 0.28);
+    border-radius: 20px;
+}
+
+.popup__header {
+    width: 100%;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.popup__logo {
+    max-width: 95px;
+    margin: 17px 0 19px 28px;
+}
+
+.popup__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup__title {
+    font-size: 26px;
+    line-height: 1;
+    text-wrap: nowrap;
+    margin: 17px 60px;
+}
+
+.popup__input-name,
+.popup__input-phone {
+    width: 85%;
+    height: 56px;
+    font-size: 18px;
+    padding-left: 25px;
+    margin-bottom: 18px;
+    color: #B9B9B9;
+    border-radius: 10px;
+    border: 1px solid #E4E4E4;
+    outline: none;
+}
+
+.popup__input-name::placeholder,
+.popup__input-phone::placeholder {
+    font-family: 'Source Sans Pro';
+}
+
+.popup__btn {
+    display: inline-block;
+    width: 85%;
+    background-color: #5EB8F0;
+    color: var(--color-white);
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 18px 0px;
+    white-space: nowrap;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.35s ease;
+}
+
+.popup__btn:hover {
+    background-color: #51A8DE;
+}
+
+.popup__description {
+    color: #747474;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+body .mfp-bg {
+    background: rgba(48, 45, 45, 0.45);
+}
+
+/* Popup end */
+
+/* 404 start */
+.error {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background: linear-gradient(90deg, #a7d2fb, #dfeefc);
+}
+
+.error__img {
+    max-width: 410px;
+    vertical-align: bottom;
+    padding-top: 60px;
+}
+
+.error__card {
+    position: absolute;
+    width: 665px;
+    background: linear-gradient(90deg, #DFEEFCE5, #A7D2FBF2);
+    box-shadow: 0px 5px 8px 2px #12111121;
+    border-radius: 50px 50px 0 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    padding-bottom: 40px;
+}
+
+.error__title {
+    color: #302D2D;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 0 15px;
+}
+
+.error__description {
+    display: block;
+    color: #302D2D;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* 404 end */
+
+/* responsive start */
+@media screen and (min-width: 992px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    /* news 1300 start */
+    .news__img {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* news 1300 end */
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* header 1200 start */
+    .header__nav ul {
+        gap: 21px;
+    }
+
+    /* header 1200 end */
+
+    /* about 1200 start */
+    .about__title {
+        font-size: 40px;
+        white-space: normal;
+    }
+
+    .about__img {
+        max-width: 440px;
+        margin: 115px 50px 105px 0px;
+    }
+
+    /* about 1200 end */
+
+    /* price 1200 start */
+    .price__img {
+        width: min(675px, 40vw);
+    }
+
+    .price__left {
+        max-width: 650px;
+        min-width: 0;
+        padding: 60px 0 80px;
+    }
+
+    .price__card {
+        padding: 45px 55px;
+        width: 100%;
+    }
+
+    /* price 1200 end */
+
+    /* Blog-single page 1200 start */
+    .memo__nav::after {
+        left: 53%;
+    }
+
+    /* Blog-single page 1200 end */
+
+    /* Contacts-page 1200 start */
+    .clinic-contacts__cards {
+        display: grid;
+        justify-content: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 40px;
+    }
+
+    /* Contacts-page 1200 end */
+}
+
+@media screen and (max-width: 992px) {
+
+    /* header 992 start */
+    .header__contacts-info,
+    .header__nav {
+        display: none;
+    }
+
+    /* header 992 end */
+
+    /* banner 992 start */
+    .banner {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .banner-row {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner__subtitle {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .banner__title {
+        font-size: 50px;
+        margin-bottom: 14px;
+    }
+
+    .banner__description {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .banner__btn {
+        position: absolute;
+        font-size: 20px;
+        padding: 20px 48px;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .banner__right {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .banner__img {
+        max-width: 344px;
+        left: -15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner__img-logo {
+        max-width: 255px;
+        top: 120px;
+        right: -65px;
+    }
+
+    .banner__img-circle {
+        width: 50px;
+    }
+
+    /* banner 992 end */
+
+    /* about 992 start */
+    .about-row {
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .about__img {
+        max-width: 320px;
+        margin: 50px 20px;
+    }
+
+    .about__right {
+        max-width: 325px;
+    }
+
+    .about__title {
+        font-size: 30px;
+        font-weight: 400;
+        white-space: normal;
+        padding-bottom: 28px;
+        line-height: 30px;
+    }
+
+    .about__title-break {
+        display: none;
+    }
+
+    .about__description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .about__list-title {
+        font-size: 14px;
+        padding-bottom: 14px;
+    }
+
+    .about__list {
+        gap: 0px 0px;
+        font-size: 14px;
+    }
+
+    .about__list li {
+        font-size: 14px;
+    }
+
+    .about__list li::before {
+        font-size: 22px;
+        margin-right: 14px;
+    }
+
+    /* about 992 end */
+
+    /* features 992 start */
+    .features-row {
+        flex-direction: column;
+    }
+
+    /* features 992 end */
+
+    /* specialists 992 start */
+    .specialists__bottom {
+        display: grid;
+        justify-content: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 20px;
+    }
+
+    .specialists__card {
+        max-width: 240px;
+    }
+
+    /* specialists 992 end */
+
+    /* price 992 start */
+    .price__img {
+        display: none;
+    }
+
+    .price-row {
+        justify-content: center;
+    }
+
+    .price__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    /* price 992 end */
+
+    /* news 992 start */
+    .news__title {
+        font-size: 45px;
+        line-height: 45px;
+        padding: 40px 0 25px;
+    }
+
+    .news__wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .news__img {
+        margin: 0 auto;
+    }
+
+    /* news 992 end */
+
+    /* reviews 992 start */
+    .reviews__card::after {
+        display: none;
+    }
+
+    /* reviews 992 end */
+
+    /* recording 992 start */
+
+    .recording__card {
+        max-width: 400px;
+        margin: 120px 20px 20px 0px;
+        padding: 58px 68px;
+    }
+
+    .recording__img {
+        max-width: 450px;
+    }
+
+    /* recording 992 end */
+
+    /* footer 992 start */
+    .footer__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0 20px;
+    }
+
+    .footer__inner::after {
+        display: none;
+    }
+
+    .footer__services {
+        order: 1;
+        text-align: center;
+        padding-bottom: 61px;
+    }
+
+    .footer__doctors {
+        order: 2;
+        text-align: center;
+        padding-bottom: 61px;
+    }
+
+    .footer__mode {
+        order: 3;
+        text-align: center;
+        padding-bottom: 61px;
+    }
+
+    .footer__contacts {
+        order: 4;
+        text-align: center;
+    }
+
+    .footer__contacts {
+        width: auto;
+        max-width: none;
+        margin-right: 0;
+        text-align: start;
+    }
+
+    .footer__logo {
+        display: block;
+        margin: 0 auto 61px;
+        padding-bottom: 0;
+    }
+
+    .footer__contacts-info img {
+        margin-right: 8px;
+    }
+
+    .footer__contacts-email {
+        padding-bottom: 52px;
+    }
+
+    /* footer 992 end */
+
+    /* Blog page 992 start */
+    .blog__title {
+        padding: 24px 0 18px;
+    }
+
+    /* Blog page 992 end */
+
+    /* Blog-single page 992 start */
+    .memo__nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .memo__nav::after {
+        display: none;
+    }
+
+    .comment {
+        padding-bottom: 55px;
+    }
+
+    .comment__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .comment__title {
+        padding-bottom: 30px;
+    }
+
+    .comment__input {
+        height: 40px;
+        padding-left: 15px;
+        margin-bottom: 14px;
+    }
+
+    .comment__input-comment {
+        height: 165px;
+        padding-top: 13px;
+    }
+
+    .comment__btn {
+        max-width: 100%;
+        padding: 10px 53px;
+        white-space: nowrap;
+        margin-bottom: 40px;
+    }
+
+    .comment__description {
+        padding-bottom: 50px;
+    }
+
+    .comment .memo__separator-bottom {
+        display: none;
+    }
+
+    .comment__card {
+        margin: 0 auto;
+        padding: 0px 0 55px;
+    }
+
+    /* Blog-single page 992 end */
+
+    /* Contacts-page 992 start */
+
+    .clinic-contacts__card {
+        width: 244px;
+        height: 248px;
+        border-radius: 5px;
+    }
+
+    /* Contacts-page 992 end */
+
+    /* Dentists-page 992 start */
+
+    .dentists__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dentists__img {
+        max-width: 480px;
+        height: auto;
+        margin: 28px 10px;
+    }
+
+    .dentists__name {
+        margin: 0;
+    }
+
+    .dentists__title {
+        margin-top: 21px;
+        margin-bottom: 11px;
+    }
+
+    .dentists__schedule {
+        margin-bottom: 23px;
+    }
+
+    .dentists-contacts {
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+        padding-bottom: 71px;
+    }
+
+    .dentists-contacts__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-white);
+        width: 100%;
+        height: 288px;
+        border-radius: 5px;
+    }
+
+    .dentists-contacts__card--phone {
+        background-color: #54A0CF;
+    }
+
+    .dentists-contacts__card--mail {
+        background-color: #29A9F9;
+    }
+
+    .dentists-contacts__card--social {
+        background-color: #328DC6;
+    }
+
+    .dentists-contacts__card-img--phone {
+        width: 45px;
+        height: 45px;
+        margin: 78px 0 22px;
+    }
+
+    .dentists-contacts__card-img--mail {
+        width: 45px;
+        height: 34px;
+        margin: 83px 0 22px;
+    }
+
+    .dentists-contacts__card-img--social {
+        width: 47px;
+        height: 47px;
+        margin: 75px 0 21px;
+    }
+
+    .dentists-contacts__card-title {
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .dentists-contacts__card-description {
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .dentists-contacts__card-social {
+        width: 22px;
+        height: 22px;
+        margin-top: 18px;
+    }
+
+    .dentists-contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding-bottom: 47px;
+    }
+
+    .dentists-contacts__card:last-child {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+
+    /* Dentists-page 992 end */
+
+    /* 404 992 start */
+    .error__card {
+        max-width: 665px;
+        width: calc(100% - 30px);
+    }
+
+    /* 404 992 end */
+}
+
+@media screen and (max-width: 762px) {
+
+    /* recording 762 start */
+    .recording__card {
+        margin: 30px auto;
+    }
+
+    .recording__img {
+        display: none;
+    }
+
+    /* recording 762 end */
+
+    /* Dentists-page 762 start */
+
+    .dentists__card {
+        text-align: start;
+    }
+
+    .dentists__description {
+        font-size: 16px;
+    }
+
+    /* Dentists-page 762 end */
+}
+
+
+@media screen and (max-width: 575px) {
+
+    /* header 575 start */
+    .header__contacts-location {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .header__logo {
+        margin-right: 15px;
+    }
+
+    .header__logo img {
+        max-width: 130px;
+    }
+
+    .header__btn {
+        font-size: 12px;
+        padding: 16px 12px;
+        text-align: center;
+    }
+
+    /* header 575 end */
+
+    /* banner 575 start */
+    .banner {
+        padding-bottom: 60px;
+    }
+
+    .banner__subtitle {
+        font-size: 9px;
+    }
+
+    .banner__title {
+        font-size: 40px;
+        margin-bottom: 14px;
+    }
+
+    .banner__description {
+        font-size: 12px;
+    }
+
+    .banner__subtitle::before {
+        display: none;
+    }
+
+    .banner__img {
+        max-width: 304px;
+    }
+
+    .banner__img-logo {
+        max-width: 205px;
+        right: -60px;
+    }
+
+    .banner__btn {
+        bottom: -25px;
+    }
+
+    /* banner 575 end */
+
+    /* features 575 start */
+    .features {
+        padding: 55px 0;
+    }
+
+    .features__item {
+        max-width: 350px;
+    }
+
+    .features__icon {
+        max-width: 85px;
+        padding-bottom: 22px;
+    }
+
+    .features__title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .features__description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* features 575 end */
+
+    /* specialists 575 start */
+    .specialists {
+        padding: 46px 0 30px;
+    }
+
+    .specialists__top {
+        max-width: 325px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .specialists__title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .specialists__description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .specialists__bottom {
+        column-gap: 11px;
+    }
+
+    .specialists__card {
+        max-width: 155px;
+    }
+
+    .specialists__img {
+        padding-bottom: 12px;
+    }
+
+    .specialists__name {
+        font-size: 12px;
+        line-height: 10px;
+        padding-bottom: 5px;
+        margin-left: 13px;
+    }
+
+    .specialists__profession {
+        font-size: 10px;
+        line-height: 8px;
+        padding-bottom: 13px;
+        margin-left: 13px;
+    }
+
+    /* specialists 575 end */
+
+    /* price 575 start */
+    .price__left {
+        max-width: 320px;
+        padding: 30px 0 35px;
+    }
+
+    .price__card {
+        max-width: 320px;
+        padding: 24px 40px;
+    }
+
+    .price__title {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+
+    .price__description {
+        font-size: 8px;
+        line-height: 8px;
+        margin-bottom: 35px;
+    }
+
+    .price__services {
+        font-size: 12px;
+        line-height: 12px;
+        align-items: flex-end;
+        margin-bottom: 17px;
+        padding-bottom: 2px;
+    }
+
+    /* price 575 end */
+
+    /* news 575 start */
+    .news__title {
+        font-size: 30px;
+        line-height: 30px;
+        padding: 40px 0 25px;
+    }
+
+    .news__wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        padding-bottom: 61px;
+    }
+
+    .news__card {
+        padding: 9px 9px 17px;
+    }
+
+    .news__img {
+        padding-bottom: 14px;
+    }
+
+    .news__meta {
+        font-size: 8px;
+        line-height: 8px;
+        padding: 0px 8px 8px;
+    }
+
+    .news__headline {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 0px 8px 16px;
+    }
+
+    .news__description {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 0px 8px 15px;
+    }
+
+    .news__btn {
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    /* news 575 end */
+
+    /* reviews 575 start */
+    .reviews {
+        padding: 46px 0;
+    }
+
+    .reviews__card {
+        padding: 30px;
+    }
+
+    .reviews__title {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .reviews__content {
+        flex-direction: column;
+        text-align: center;
+        max-width: 320px;
+    }
+
+    .reviews__avatar {
+        max-width: 120px;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .reviews__description {
+        font-size: 10px;
+        padding-bottom: 16px;
+    }
+
+    .reviews__name-text {
+        font-size: 16px;
+    }
+
+    .reviews .swiper-button-prev,
+    .reviews .swiper-button-next {
+        width: 31px;
+        height: 31px;
+    }
+
+    .reviews .swiper-horizontal .swiper-button-prev {
+        top: 100px;
+    }
+
+    .reviews .swiper-horizontal .swiper-button-next {
+        top: 100px;
+    }
+
+    .reviews .swiper-button-prev svg,
+    .reviews .swiper-button-next svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* reviews 575 end */
+
+    /* recording 575 start */
+    .recording__card {
+        max-width: 310px;
+        padding: 40px 35px;
+    }
+
+    .recording__title {
+        font-size: 24px;
+        padding-bottom: 22px;
+    }
+
+    .recording__input-name,
+    .recording__input-phone {
+        height: 46px;
+        font-size: 14px;
+        padding-left: 17px;
+        margin-bottom: 15px;
+    }
+
+    .recording__btn {
+        font-size: 14px;
+        padding: 13px 60px;
+        margin-bottom: 15px;
+    }
+
+    .recording__description {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    /* recording 575 end */
+
+    /* footer 575 start */
+
+    .footer__copyright {
+        padding: 27px 0;
+    }
+
+    /* footer 575 end */
+
+    /* path 575 start */
+    .path__img {
+        left: -22px;
+        margin-right: 0px;
+    }
+
+    /* path 575 end */
+
+    /* Blog page 575 start */
+    .blog__title {
+        padding: 24px 0 18px;
+    }
+
+    /* Blog page 575 end */
+
+    /* Blog-single page 575 start */
+
+    .memo {
+        padding: 17px 0 35px;
+    }
+
+    .memo__header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .memo__img {
+        height: 226px;
+        padding-bottom: 17px;
+    }
+
+    .memo__meta {
+        padding: 0px 0px 17px;
+    }
+
+    .memo__comment {
+        margin-left: 46px;
+    }
+
+    .memo__title {
+        font-size: 33px;
+        padding-bottom: 20px;
+    }
+
+    .memo__description {
+        color: #535050;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+        padding-bottom: 35px;
+    }
+
+    .memo__description:last-child {
+        padding-bottom: 0;
+    }
+
+    .memo__subtitle {
+        font-size: 16px;
+    }
+
+    .memo__btn {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .memo__btn-img {
+        width: 29px;
+    }
+
+    .memo__separator-top {
+        display: block;
+        border: 1px solid #ECECEC;
+        margin-bottom: 50px;
+    }
+
+    .memo__separator-bottom {
+        display: none;
+    }
+
+    .comment__title {
+        font-size: 27px;
+    }
+
+    .comment__input {
+        font-size: 12px;
+    }
+
+    .comment__btn {
+        font-size: 11px;
+    }
+
+    .comment__description {
+        font-size: 22px;
+    }
+
+    .comment__card {
+        max-width: 310px;
+        padding-bottom: 0;
+    }
+
+    .comment__img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .comment__commentary {
+        padding-left: 20px;
+    }
+
+    .comment__name {
+        padding-bottom: 7px;
+        padding-top: 0px;
+    }
+
+    .comment__date {
+        font-size: 11px;
+        padding-bottom: 8px;
+    }
+
+    .comment__text {
+        font-size: 12px;
+        padding-bottom: 6px;
+    }
+
+    .comment__answer {
+        font-size: 12px;
+    }
+
+    /* Blog-single page 575 end */
+
+    /* Contacts-page 575 start */
+    .clinic-contacts__cards {
+        column-gap: 15px;
+    }
+
+    .clinic-contacts__card {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    .clinic-contacts__card-img--address {
+        width: 21px;
+        height: 29px;
+        margin: 31px 0 11px;
+    }
+
+    .clinic-contacts__card-img--phone {
+        width: 23px;
+        height: 23px;
+        margin: 40px 0 11px;
+    }
+
+    .clinic-contacts__card-img--mail {
+        width: 23px;
+        height: 17px;
+        margin: 42px 0 11px;
+    }
+
+    .clinic-contacts__card-img--social {
+        width: 24px;
+        height: 24px;
+        margin: 30px 0 10px;
+    }
+
+    .clinic-contacts__card-title {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .clinic-contacts__card-description {
+        font-size: 10px;
+    }
+
+    .clinic-contacts__card-social {
+        width: 12px;
+        height: 12px;
+        margin-top: 10px;
+    }
+
+    .connection {
+        padding-bottom: 38px;
+    }
+
+    .connection__form {
+        width: 310px;
+    }
+
+    .connection__title {
+        font-size: 32px;
+        padding-bottom: 22px;
+    }
+
+    .connection__input {
+        height: 46px;
+        font-size: 14px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .connection__input-comment {
+        height: 256px;
+        padding-top: 13px;
+    }
+
+    /* Contacts-page 575 end */
+
+    /* Dentists-page 575 start */
+
+    .dentists__img {
+        width: 310px;
+        height: 300px;
+    }
+
+    .dentists__name {
+        font-size: 34px;
+    }
+
+    .dentists__title {
+        font-size: 15px;
+    }
+
+    .dentists__description {
+        font-size: 13px;
+    }
+
+    .dentists__description::before {
+        left: -7px;
+        top: -18px;
+        font-size: 30px;
+    }
+
+    .dentists__schedule {
+        font-size: 13px;
+    }
+
+    .dentists-contacts__card {
+        height: auto;
+    }
+
+    .dentists-contacts__card-img--phone {
+        width: 18px;
+        height: 18px;
+        margin: 30px 0 10px;
+    }
+
+    .dentists-contacts__card-img--mail {
+        width: 18px;
+        height: 13px;
+        margin: 32px 0 9px;
+    }
+
+    .dentists-contacts__card-img--social {
+        width: 38px;
+        height: 38px;
+        margin: 58px 0 17px;
+    }
+
+    .dentists-contacts__card-title {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .dentists-contacts__card-title--last-child {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+
+    .dentists-contacts__card-description {
+        font-size: 10px;
+        margin-bottom: 32px;
+    }
+
+    .dentists-contacts__card-social {
+        margin-bottom: 56px;
+    }
+
+    /* Dentists-page 575 end */
+
+    /* Popup 575 start */
+    .popup {
+        max-width: 320px;
+    }
+
+
+    .popup__logo {
+        max-width: 85px;
+    }
+
+
+    .popup__title {
+        font-size: 22px;
+    }
+
+    .popup__input-name,
+    .popup__input-phone {
+        height: 46px;
+        font-size: 16px;
+    }
+
+    .popup__btn {
+        width: 85%;
+        font-size: 16px;
+        padding: 16px 0px;
+    }
+
+    /* Popup 575 end */
+
+    /* 404 575 start */
+    .error__img {
+        max-width: 310px;
+        padding-top: 40px;
+    }
+
+    .error__card {
+        padding-bottom: 30px;
+    }
+
+    .error__title {
+        font-size: 26px;
+        padding: 30px 0 10px;
+    }
+
+    .error__description {
+        font-size: 20px;
+    }
+
+    /* 404 575 end */
+}
+
+@media screen and (max-width: 380px) {
+
+    /* Popup 380 start */
+    .popup {
+        max-width: 275px;
+    }
+
+    /* Popup 380 end */
+
+    /* 404 380 start */
+    .error__img {
+        max-width: 250px;
+        padding-top: 35px;
+    }
+
+    .error__card {
+        padding-bottom: 25px;
+    }
+
+    .error__title {
+        font-size: 22px;
+    }
+
+    .error__description {
+        font-size: 19px;
+    }
+
+    /* 404 380 end */
+}
+
+/* responsive end */
